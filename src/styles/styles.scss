@@ -582,6 +582,14 @@ img {
             height: 380px;
         }
     }
+
+    .card-5 {
+        img {
+            @media (min-width: 1366px) {
+                height: 160px;
+            }
+        }
+    }
 }
 
 .gaiming {
