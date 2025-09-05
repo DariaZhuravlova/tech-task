@@ -557,6 +557,46 @@ img {
     }
 }
 
+.office {
+    .card-1, .card-2, .card-6 {
+        @media (min-width: 1366px) {
+           height: 400px;
+        }
+         @media (min-width: 1920px) {
+           height: 540px;
+        }
+    }
+
+    .card-3, .card-4, .card-7 {
+        @media (min-width: 1366px) {
+           height: 280px;
+        }
+         @media (min-width: 1920px) {
+           height: 380px;
+        }
+    }
+}
+
+.gaiming {
+    .card-1, .card-5 {
+        @media (min-width: 1366px) {
+           height: 400px;
+        }
+         @media (min-width: 1920px) {
+           height: 540px;
+        }
+    }
+
+     .card-2, .card-3, .card-4 {
+        @media (min-width: 1366px) {
+           height: 280px;
+        }
+         @media (min-width: 1920px) {
+           height: 380px;
+        }
+    }
+}
+
 // top
 
 .card-items {
