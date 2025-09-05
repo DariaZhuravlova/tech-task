@@ -65,6 +65,10 @@ section {
     }
 }
 
+img {
+    pointer-events: none;
+}
+
 .section-title {
     font-size: 24px;
     font-weight: 500;
