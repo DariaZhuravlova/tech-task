@@ -511,7 +511,7 @@ img {
     background-color: $bg-light;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 16px;
     padding: 16px;
@@ -529,18 +529,21 @@ img {
     }
 
     img {
-        width: 256px;
         height: 220px;
+        width: 100%;
         object-fit: contain;
-
-        @media (min-width: 576px) {
-            min-width: 232px;
-            max-width: 328px;
-        }
+        flex: 1;
 
         @media (min-width: 768px) {
-            width: 328px;
             height: 292px;
+        }
+
+        @media (min-width: 1366px) {
+            height: 196px;
+        }
+
+        @media (min-width: 1920px) {
+            height: 296px;
         }
     }
 
@@ -558,41 +561,48 @@ img {
 }
 
 .office {
-    .card-1, .card-2, .card-6 {
+    .card-1,
+    .card-2,
+    .card-6 {
         @media (min-width: 1366px) {
-           height: 400px;
+            height: 400px;
         }
-         @media (min-width: 1920px) {
-           height: 540px;
+        @media (min-width: 1920px) {
+            height: 540px;
         }
     }
 
-    .card-3, .card-4, .card-5 {
+    .card-3,
+    .card-4,
+    .card-5 {
         @media (min-width: 1366px) {
-           height: 280px;
+            height: 280px;
         }
-         @media (min-width: 1920px) {
-           height: 380px;
+        @media (min-width: 1920px) {
+            height: 380px;
         }
     }
 }
 
 .gaiming {
-    .card-1, .card-5 {
+    .card-1,
+    .card-5 {
         @media (min-width: 1366px) {
-           height: 400px;
+            height: 400px;
         }
-         @media (min-width: 1920px) {
-           height: 540px;
+        @media (min-width: 1920px) {
+            height: 540px;
         }
     }
 
-     .card-2, .card-3, .card-4 {
+    .card-2,
+    .card-3,
+    .card-4 {
         @media (min-width: 1366px) {
-           height: 280px;
+            height: 280px;
         }
-         @media (min-width: 1920px) {
-           height: 380px;
+        @media (min-width: 1920px) {
+            height: 380px;
         }
     }
 }
